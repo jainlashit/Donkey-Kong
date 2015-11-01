@@ -12,7 +12,7 @@ Controls :
 	 Space -> Jump(Disabled while climbing ladder)
 
 For Coders:
-	Well the mosty absurd thing I've added to project is my "constant.py" file , which stores all the static variable . So if you find any variables with CAPITAL LETTERS and think where the hell have they come from just look up for "constant.py" file :)
+	Well the most absurd thing I've added to project is my "constant.py" file , which stores all the static variable . So if you find any variables with CAPITAL LETTERS and think where the hell have they come from just look up for "constant.py" file :)
 	I've tried to keep file name and class name the same(in case there is only one class inside of file)
 
 For Graders(My Dear TA's) :
