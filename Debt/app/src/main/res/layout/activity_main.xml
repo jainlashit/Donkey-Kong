@@ -1,0 +1,78 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#ff01b79b"
+    android:weightSum="1">
+    <!--        android:backgroundTint="#ffa9faff"-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:hint="@string/name"
+        android:paddingLeft="10sp"
+        android:background="#ffa9faff"
+        android:textStyle="italic"
+        android:id="@+id/name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#ffa9faff"
+        android:id="@+id/amount"
+        android:layout_weight="0.2"
+        android:paddingLeft="10sp"
+        android:hint="@string/amount"
+        android:textStyle="italic"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_weight="0.1"
+    android:layout_height="0dp"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/exit"
+        android:id="@+id/button1"
+        android:layout_weight="0.25"
+        android:background="#ff01b79b"
+        android:textColor="#ffa9faff"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/next"
+        android:id="@+id/button2"
+        android:layout_weight="0.25"
+        android:background="#ff01b79b"
+        android:textColor="#ffa9faff"
+
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"/>
+    </LinearLayout>
+</LinearLayout>

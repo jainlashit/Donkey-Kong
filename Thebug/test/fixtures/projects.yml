@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  creator: MyString
+  name: MyString
+  is_public: false
+
+two:
+  creator: MyString
+  name: MyString
+  is_public: false

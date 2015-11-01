@@ -1,0 +1,36 @@
+<h3>Issues</h3>
+<div style="padding-left:75%">
+  Search:&#128269
+<input type="text" ng-model="search" placeholder="Enter a Value" autofocus="autofocus">
+</div>
+
+<div class="container">
+    <table class="table table-responsive">
+      <thead>        
+        <tr>
+            <th>
+                Project
+            </th>
+            <th>
+                Tag
+            </th>
+            <th>
+                Delete
+            </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="x in issues | filter:search ">
+            <td>{{x.project}}</td>
+            <td>{{x.tag}}</td>
+             <td>
+                 <a href="http://localhost:3000/index#/issue">
+                    <button type="button" class="btn btn-danger" ng-click="deleteIssue(x.id)">
+                        Delete
+                    </button>
+                </a>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+</div>

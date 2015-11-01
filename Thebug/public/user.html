@@ -1,0 +1,35 @@
+<h3>Users</h3>
+<div style="padding-left:75%">
+  Search:&#128269
+<input type="text" ng-model="search" placeholder="Enter a username" autofocus="autofocus">
+</div>
+
+<div class="container">
+	<table class="table table-responsive">
+        <thead>
+		  <tr>
+            <th>
+              Username
+            </th>
+              <th>
+                  Email
+              </th>
+                <th>
+                    Delete
+              </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="x in users | filter:search">
+              <td>{{x.username}}</td>  
+              <td ng-pattern="finduser">{{x.email}}</td>
+                <td>
+                    <a href="http://localhost:3000/index#/user"></a>
+                    <button type="button" class="btn btn-danger" ng-click="deleteUser(x.id)">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+	</table>
+</div>

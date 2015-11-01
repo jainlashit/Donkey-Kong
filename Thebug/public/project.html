@@ -1,0 +1,39 @@
+<h3>Projects</h3>
+<div style="padding-left:75%">
+  Search:&#128269
+<input type="text" ng-model="search" placeholder="Enter a value" autofocus="autofocus">
+</div>
+<div class="container">
+    <table class="table table-responsive">
+      <thead>
+        <tr>
+            <th>
+                Creator
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Is_Public
+            </th>
+            <th>
+                Delete
+            </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="x in projects | filter:search">
+            <td>{{x.creator}}</td>
+            <td>{{x.name}}</td>
+            <td>{{x.is_public}}</td>
+             <td>
+                 <a href="http://localhost:3000/index#">
+                    <button type="button" class="btn btn-danger" ng-click="deleteProject(x.id)">
+                        Delete
+                    </button>
+                 </a>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
